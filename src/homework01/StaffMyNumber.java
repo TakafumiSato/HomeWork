@@ -5,55 +5,50 @@
  */
 package homework01;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
 /**
  *
  * @author 佐藤孝史
  */
-public class StaffMaster {
+public class StaffMyNumber {
     
     private int id;
     private String name;
     private String gender;
     private int birth;
     private int age;
+    private long myNumber;
     
-    
-    public StaffMaster(int id, String name, String gender, int birth) {
+    public StaffMyNumber(int id, String name, String gender, int birth, int age, long myNumber) {
+        
         this.id = id;
         this.name = name;
         this.gender = gender;
         this.birth = birth;
-        
-        birthToAge();
-    }
-
-    public int getID() {
-        return id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public String getGender() {
-        return gender;
-    }
-
-    public int getBirth() {
-        return birth;
+        this.age = age;
+        this.myNumber = myNumber;
     }
     
-    private void birthToAge() {
-        Date now = new Date();
-        
-        SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMdd");
-        age = (Integer.parseInt(sdf.format(now)) - this.birth) / 10000;
+    public int getID() {
+        return this.id;
     }
-
+    
+    public String getName() {
+        return this.name;
+    }
+    
+    public String getGender() {
+        return this.gender;
+    }
+    
+    public int getBirth() {
+        return this.birth;
+    }
+    
     public int getAge() {
-        return age;
+        return this.age;
+    }
+    
+    public long getMyNumber() {
+        return this.myNumber;
     }
 }
