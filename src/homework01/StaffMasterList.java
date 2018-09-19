@@ -74,7 +74,7 @@ public class StaffMasterList {
         int index = 99999;
         
         for (int i = 0; i < dataList.size(); i++) {
-            if (dataList.get(i).getId().equals(id)) {
+            if (dataList.get(i).getId() == id) {
                 index = i;
                 break;
             }

@@ -14,7 +14,7 @@ import java.util.Date;
  */
 public class StaffMaster {
     
-    private Integer id;
+    private int id;
     private String name;
     private String gender;
     private int birth;
@@ -22,7 +22,7 @@ public class StaffMaster {
     private long myNumber;
     
     
-    public StaffMaster(Integer id, String name, String gender, int birth) {
+    public StaffMaster(int id, String name, String gender, int birth) {
         this.id = id;
         this.name = name;
         this.gender = gender;
@@ -31,11 +31,11 @@ public class StaffMaster {
         birthToAge();
     }
 
-    public Integer getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(int id) {
         this.id = id;
     }
 
