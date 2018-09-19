@@ -37,6 +37,8 @@ public class HomeWork01 {
     
     static void mergeFile(StaffMasterList staffList) {
         
+        System.out.println("\n--- MergeFileTest ---\n");
+        
         int size;
         char[] cbuf = new char[2];
         
